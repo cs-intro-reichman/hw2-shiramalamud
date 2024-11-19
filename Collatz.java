@@ -12,7 +12,6 @@ public class Collatz
 			if(seed==1)
 		    {
 			    System.out.println("1 4 2 1 "+"(4)");
-				System.out.println();
 				System.out.println("Every one of the first 1 hailstone sequences reached 1.");
 		    }
 		    else
