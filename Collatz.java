@@ -5,7 +5,7 @@ public class Collatz
 	{
 		int seed = Integer.parseInt(args[0]);
 		String mode = args[1];
-		int count=0;
+		int count=1;
 		int num=0;
 		if (mode.equals("v"))
 		{
