@@ -17,11 +17,11 @@ public class Cheers {
                         char ch=newname.charAt(j);
                         if (letters.indexOf(ch)!=-1)
                         {
-                                System.out.println("Give me an "+": "+ch+": "+ch+"!");
+                                System.out.println("Give me an "+ch+": "+ch+"!");
                         }
                         else
                         {
-                                System.out.println("Give me a  "+": "+ch+": "+ch+"!");
+                                System.out.println("Give me a  "+ch+": "+ch+"!");
                         }
                 }
                 System.out.println("What does that spell?");

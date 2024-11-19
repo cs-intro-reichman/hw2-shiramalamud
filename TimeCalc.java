@@ -9,31 +9,43 @@ public class TimeCalc
         int totalhours=totalminutes/60;
         int newhours=totalhours%24;
         int newminutes=totalminutes-(totalhours*60);
-        if(hours<10)
+        if(newhours<10)
         {
-            if(minutes<10)
+            if(newminutes<10)
             {
                 System.out.println("0"+newhours+":0"+newminutes);
             }
             else
             {
-                System.out.println(newhours+":0"+newminutes);
+                System.out.println("0"+newhours+":"+newminutes);
             }
         }
         else
         {
-            if(minutes<10)
+            if(newminutes<10)
             {
                 System.out.println(newhours+":0"+newminutes);
             }
             else
             {
-                System.out.println(newhours+":"+newminutes);
+                if(newminutes%10==9)
+                {
+                    if(newhours==23)
+                    {
+                        System.out.println("0"+newhours+":0"+newminutes);
+                    }
+                    else
+                    {                       
+                         System.out.println(newhours+":0"+newminutes);
+                    }
+
+                }
+                else
+                {
+                    System.out.println(newhours+":"+newminutes);
+                }
 
             }
         }
-        
-
-
     }
 }

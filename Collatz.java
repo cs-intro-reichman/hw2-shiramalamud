@@ -40,7 +40,6 @@ public class Collatz
 					   count=1;
 		     	}
 				System.out.println();
-				System.out.println();
 				System.out.println("Every one of the first "+seed+" hailstone sequences reached 1.");
 
 		   }
